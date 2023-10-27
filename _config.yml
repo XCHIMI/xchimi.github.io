@@ -1,0 +1,22 @@
+url: "https://blog.chimi.day"
+lang: kr
+timezone: Asia/Seoul
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "chimi"
+
+collections:
+  posts:
+    permalink: /:categories/:title

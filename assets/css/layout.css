@@ -1,0 +1,131 @@
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 900;
+	font-display: swap;
+	src: local('Pretendard Black'), url('/assets/fonts/pretendard/woff2-subset/Pretendard-Black.subset.woff2') format('woff2'), url('/assets/fonts/pretendard/woff-subset/Pretendard-Black.subset.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 800;
+	font-display: swap;
+	src: local('Pretendard ExtraBold'), url('/assets/fonts/pretendard/woff2-subset/Pretendard-ExtraBold.subset.woff2') format('woff2'), url('/assets/fonts/pretendard/woff-subset/Pretendard-ExtraBold.subset.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 700;
+	font-display: swap;
+	src: local('Pretendard Bold'), url('/assets/fonts/pretendard/woff2-subset/Pretendard-Bold.subset.woff2') format('woff2'), url('/assets/fonts/pretendard/woff-subset/Pretendard-Bold.subset.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 600;
+	font-display: swap;
+	src: local('Pretendard SemiBold'), url('/assets/fonts/pretendard/woff2-subset/Pretendard-SemiBold.subset.woff2') format('woff2'), url('/assets/fonts/pretendard/woff-subset/Pretendard-SemiBold.subset.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 500;
+	font-display: swap;
+	src: local('Pretendard Medium'), url('/assets/fonts/pretendard/woff2-subset/Pretendard-Medium.subset.woff2') format('woff2'), url('/assets/fonts/pretendard/woff-subset/Pretendard-Medium.subset.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 400;
+	font-display: swap;
+	src: local('Pretendard Regular'), url('/assets/fonts/pretendard/woff2-subset/Pretendard-Regular.subset.woff2') format('woff2'), url('/assets/fonts/pretendard/woff-subset/Pretendard-Regular.subset.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 300;
+	font-display: swap;
+	src: local('Pretendard Light'), url('/assets/fonts/pretendard/woff2-subset/Pretendard-Light.subset.woff2') format('woff2'), url('/assets/fonts/pretendard/woff-subset/Pretendard-Light.subset.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 200;
+	font-display: swap;
+	src: local('Pretendard ExtraLight'), url('/assets/fonts/pretendard/woff2-subset/Pretendard-ExtraLight.subset.woff2') format('woff2'), url('/assets/fonts/pretendard/woff-subset/Pretendard-ExtraLight.subset.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 100;
+	font-display: swap;
+	src: local('Pretendard Thin'), url('/assets/fonts/pretendard/woff2-subset/Pretendard-Thin.subset.woff2') format('woff2'), url('/assets/fonts/pretendard/woff-subset/Pretendard-Thin.subset.woff') format('woff');
+}
+
+:root {
+	--background-color: #D8CDC3;
+}
+
+a {
+	all: unset;
+}
+
+body {
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+
+	background-color: var(--background-color);
+	padding: 3rem 5rem;
+
+	display: flex;
+}
+
+aside {
+	font-weight: 600;
+	width: 15rem;
+
+	/* test */
+	/* background-color: slateblue;
+	padding: 20px; */
+}
+
+header {
+	display: flex;
+	gap: 2rem;
+
+	#title {
+		display: flex;
+		flex-direction: column; /* 가로 세로 배치 방법 */
+		justify-content: center; /* 가로 정렬 */
+		align-items: flex-start; /* 세로 정렬 */
+
+		/* test */
+		/* background-color: yellow; */
+	}
+
+	#name {
+		color: #E59416;
+	}
+
+	/* test */
+	/* background-color: aqua; */
+}
+
+nav {
+	margin-top: 5rem;
+}
+
+nav > ul {
+	list-style-type: none;
+	padding: 0;
+
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+main {
+	width: 50rem;
+	padding: 0 1rem;
+
+	/* test */
+	/* background-color: tomato; */
+}

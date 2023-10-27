@@ -1,0 +1,10 @@
+---
+layout: default
+---
+<article>
+    <time datetime="{{ page.date | date_to_xmlschema }}">
+        작성일 : {{ page.date | date: "%Y/%m/%d" }}
+    </time>
+    {{ content }}
+    <hr>
+</article>

@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="{{ site.lang }}">
+  <head>
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="/assets/css/layout.css">
+  </head>
+  <body>
+
+    <aside>
+      <header>
+        <img id="logo" src="/assets/images/logo.svg" alt="로고">
+        <div id="title">
+          <div>
+            DISIGNER
+          </div>
+          <div id="name">
+            AH-CHIM
+          </div>
+        </div>
+      </header>
+
+      <nav>
+        <ul>
+          {% for item in site.data.navigation %}
+            <li>
+              <a href="{{ item.link }}" {% if page.url == item.link %}class="current"{% endif %}>{{ item.name }}</a>
+            </li>
+          {% endfor %}
+        </ul>
+      </nav>
+    </aside>
+
+    <main>
+      {{ content }}
+    </main>
+  </body>
+</html>
